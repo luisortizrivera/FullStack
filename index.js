@@ -1,7 +1,18 @@
-const Logger = require("./Demos/logger");
+const express = require("express");
+const path = require("path");
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-const logger = new Logger();
+// app.get("/", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "public", "index.html"));
+// });
 
-logger.on("message", (data) => console.log("Called Listener:", data));
+// app.get("/about", (req, res) => {
+// 	res.sendFile(path.join(__dirname, "public", "about.html"));
+// });
 
-logger.log("Hello World");
+app.use(express.static(path.join(__dirname, "public")));
+
+app.listen(PORT, () => {
+	console.log("Server listening on port: ", PORT);
+});
