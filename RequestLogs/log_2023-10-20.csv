@@ -2,3 +2,4 @@ Time,URL,IP,OS,Browser
 20:20:02,http://localhost:5000/about.html,::1,Windows,Edge
 20:20:33,http://localhost:5000/,::1,Windows,Edge
 20:20:44,http://localhost:5000/api/members,::1,Windows,Edge
+20:33:36,http://localhost:5000/api/members,::1,Windows,Edge
